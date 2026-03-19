@@ -1,5 +1,8 @@
 {
+  "name": "round-of-64-upset-pool-dashboard",
+  "version": "1.0.0",
+  "private": true,
   "scripts": {
-    "build": "echo 'No build needed'"
+    "build": "echo \"No build needed\""
   }
 }
