@@ -79,8 +79,16 @@ function renderPicks(players) {
 
     const picksHtml = (player.picks || [])
       .map(pick => {
-        const resultClass = pick.won ? "won" : "lost";
-        const resultLabel = pick.won ? "W" : "L";
+        let resultClass = "pending";
+        let resultLabel = "N/A";
+
+        if (pick.status === "won") {
+          resultClass = "won";
+          resultLabel = "W";
+        } else if (pick.status === "lost") {
+          resultClass = "lost";
+          resultLabel = "L";
+        }
 
         return `
           <li class="${resultClass}">

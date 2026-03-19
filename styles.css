@@ -433,3 +433,18 @@ tbody tr:hover {
     padding: 12px 12px;
   }
 }
+
+.result-badge.pending {
+  background: rgba(148, 163, 184, 0.9);
+  color: white;
+}
+
+.result-badge.pending {
+  background: rgba(148, 163, 184, 0.9);
+  color: white;
+}
+
+.pick-list li.pending {
+  background: rgba(148, 163, 184, 0.08);
+  border: 1px solid rgba(148, 163, 184, 0.22);
+}
